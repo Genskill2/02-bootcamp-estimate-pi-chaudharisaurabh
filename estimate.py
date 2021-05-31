@@ -23,6 +23,8 @@ class TestWallis(unittest.TestCase):
 
 
 class TestMC(unittest.TestCase):
+    def monte_carlo(i):
+        return i
     def test_randomness(self):
         pi0 = monte_carlo(15000)
         pi1 = monte_carlo(15000)
