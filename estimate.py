@@ -14,7 +14,8 @@ def monte_carlo(i):
     while(i>0):
         x=random.random()
         y=random.random()
-        dist=math.sqrt(pow(x,2),pow(y,2))
+        dist=pow(x,2)+pow(y,2)
+        dist=math.sqrt(dist)
         if(dist<1):
             ins+=1
         i-=1
