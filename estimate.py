@@ -2,6 +2,15 @@ import math
 import unittest
 
 class TestWallis(unittest.TestCase):
+    def wallis(i):
+        mult=1
+        for it in range(0,i):
+            mult*=(4*(i*i))/(4*n*n-1)
+        return 2*mult
+            
+        
+        
+        
     def test_low_iters(self):
         for i in range(0, 5):
             pi = wallis(i)
