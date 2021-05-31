@@ -5,7 +5,7 @@ import random
 def wallis(i):
         mult=1
         while(i>0):
-            mult=mult*(4*(i*i))/(4*n*n-1)
+            mult=mult*(4*(i*i))/(4*i*i-1)
             i=i-1
         return 2*mult
 def monte_carlo(i):
